@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
+    /* A bright gradient background from cyan to light green */
+}
+
+.calculator {
+    width: 320px;
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    /* Slight shadow for a subtle 3D effect */
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 80px;
+    background-color: #16213E;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: right;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Inset shadow for a deep display look */
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.key {
+    height: 60px;
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease;
+}
+
+.key:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+    /* Slight scale effect on hover */
+}
+
+.key:active {
+    background-color: #ccc;
+    transform: scale(1);
+}
+
+.operator {
+    background-color: #ff5722;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+.equal-sign {
+    grid-column: span 4;
+    background-color: #6200ea;
+    color: white;
+    font-size: 1.8rem;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.equal-sign:hover {
+    background-color: #3700b3;
+    transform: scale(1.05);
+}
+
+.clear-button {
+    background-color: #d32f2f;
+    color: white;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.clear-button:hover {
+    background-color: #b71c1c;
+    transform: scale(1.05);
+}
